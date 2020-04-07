@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/paper-kit.css">
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- datatables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <style>
+       .navbar {
+           height: 60px;
+       }
+       .gambar {
+           width: 20px;
+       }
+       .jumbotron {
+            height: 350px;
+       }
+       .home {
+           margin-top:1cm;
+       }
+       .home img {
+           height: 40px;
+           float: left;
+       }
+       .text p {
+           font-weight: bold;
+       }
+    </style>
+    <title>COVID-19</title>
+  </head>
+  <body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-info fixed-top" color-on-scroll="300">
+    <div class="container">
+      <div class="navbar-translate">
+          INFO COVID-19
+          <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar bar1"></span>
+            <span class="navbar-toggler-bar bar2"></span>
+            <span class="navbar-toggler-bar bar3"></span>
+          </button>
+        </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Dashboard" data-placement="bottom" href="#" target="_blank">
+              <img src="assets/img/home-run.png" class="gambar img-fluid" alt="">
+              <p class="d-lg">Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Tips & Trick" data-placement="bottom" href="#" target="_blank">
+                <img src="assets/img/idea.png" class="gambar img-fluid" alt="">
+              <p class="d-lg">Tips & Trick</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Download Source Code" data-placement="bottom" href="#" target="_blank">
+                <img src="assets/img/arrow.png" class="gambar img-fluid" alt="">
+              <p class="d-lg">Download SC</p>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->    
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4">CORONAVIRUS DATA</h1>
+            <p class="lead">This is a website for update about corovavirus global data. This data from kawalcorona.com</p>
+        </div>
+        <hr>
+        <div class="home container">
+            <h5 class="text-center mb-4">DATA GLOBAL</h5>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="card bg-danger img-card box-primary-shadow">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="text">
+                                            <p>MENINGGAL</p>
+                                            <P>100 ORANG</P>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <img src="assets/img/dead.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="card bg-info img-card box-primary-shadow">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="text">
+                                            <p>POSITIF</p>
+                                            <P>100 ORANG</P>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <img src="assets/img/add.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="card bg-danger img-card box-primary-shadow">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="text">
+                                            <p>SEMBUH</p>
+                                            <p>100 ORANG</p>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <img src="assets/img/emoji.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+<div class="container">
+    <div class="row row-cards">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-14">
+            <div class="cards">
+                <div class="card-title">
+                    <h3 class="text-center mb-3">RINCIAN KASUS CORONAVIRUS SELURUH DUNIA</h3>
+                </div>
+                <table class="table" id="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">NO</th>
+                            <th scope="col">NEGARA</th>
+                            <th scope="col">POSITIF</th>
+                            <th scope="col">MENINGGAL</th>
+                            <th scope="col">SEMBUH</th>
+                        </tr>
+                    </thead>
+                    <tbody id="isi-negara">
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+   <!-- jquery -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <!-- dataTables -->
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/js/paper-kit.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#table').DataTable();
+        } );
+    </script>
+  </body>
+</html>
