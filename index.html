@@ -20,7 +20,7 @@
            width: 20px;
        }
        .jumbotron {
-            height: 350px;
+            height: 360px;
        }
        .home {
            margin-top:1cm;
@@ -81,60 +81,57 @@
             <p class="lead">This is a website for update about corovavirus global data. This data from kawalcorona.com</p>
         </div>
         <hr>
-        <div class="home container">
-            <h5 class="text-center mb-4">DATA GLOBAL</h5>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                            <div class="card bg-danger img-card box-primary-shadow">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="text">
-                                            <p>MENINGGAL</p>
-                                            <P>100 ORANG</P>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <img src="assets/img/dead.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                            <div class="card bg-info img-card box-primary-shadow">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="text">
-                                            <p>POSITIF</p>
-                                            <P>100 ORANG</P>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <img src="assets/img/add.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                            <div class="card bg-danger img-card box-primary-shadow">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="text">
-                                            <p>SEMBUH</p>
-                                            <p>100 ORANG</p>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <img src="assets/img/emoji.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
     </div>
+            <div class="home container">
+                <h5 class="text-center mb-4">DATA GLOBAL</h5>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                                <div class="card bg-danger img-card box-primary-shadow">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="text" id="meninggal-global">
+                                                
+                                            </div>
+                                            <div class="ml-auto">
+                                                <img src="assets/img/dead.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                                <div class="card bg-info img-card box-primary-shadow">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="text" id="positif-global">
+                                                
+                                            </div>
+                                            <div class="ml-auto">
+                                                <img src="assets/img/add.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                                <div class="card bg-success img-card box-primary-shadow">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="text" id="sembuh-global">
+                                                
+                                            </div>
+                                            <div class="ml-auto">
+                                                <img src="assets/img/emoji.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
     <br>
     <hr>
     <br>
@@ -148,7 +145,6 @@
                 <table class="table" id="table">
                     <thead>
                         <tr>
-                            <th scope="col">NO</th>
                             <th scope="col">NEGARA</th>
                             <th scope="col">POSITIF</th>
                             <th scope="col">MENINGGAL</th>
@@ -156,13 +152,7 @@
                         </tr>
                     </thead>
                     <tbody id="isi-negara">
-                        <tr>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>1</td>
-                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
@@ -182,6 +172,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="assets/js/paper-kit.js"></script>
+    <script src="script.js"></script>
     <script>
         $(document).ready(function() {
             $('#table').DataTable();
