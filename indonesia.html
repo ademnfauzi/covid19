@@ -20,7 +20,7 @@
            width: 20px;
        }
        .jumbotron {
-            height: 360px;
+            height: 300px;
        }
        .home {
            margin-top:1cm;
@@ -51,13 +51,13 @@
         
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Dashboard" data-placement="bottom" href="#">
+            <a class="nav-link" rel="tooltip" title="Dashboard" data-placement="bottom" href="index.html">
               <img src="assets/img/home-run.png" class="gambar img-fluid" alt="">
               <p class="d-lg">Dashboard</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="INDONESIAN DATA" data-placement="bottom" href="indonesia.html" >
+            <a class="nav-link" rel="tooltip" title="INDONESIAN DATA" data-placement="bottom" href="indonesia.html">
                 <img src="assets/img/indonesia.png" class="gambar img-fluid" alt="">
               <p class="d-lg">INDONESIA</p>
             </a>
@@ -74,23 +74,23 @@
     </div>
   </nav>
   <!-- End Navbar -->    
-
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container text-center">
-            <h1 class="display-4">CORONAVIRUS DATA</h1>
-            <br>
-            <p class="lead">This is a website for update data about coronavirus global data.</p>
-        </div>
-        <hr>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+        <BR></BR>
+        <h1 class="display-4">INDONESIA CORONAVIRUS DATA</h1>
+        <br>
     </div>
+    <hr>
+</div>
+
             <div class="home container">
-                <h5 class="text-center mb-4">DATA GLOBAL</h5>
+                <h5 class="text-center mb-4">KESELURUHAN DATA DI INDONESIA</h5>
                         <div class="row">
                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
                                 <div class="card bg-danger img-card box-primary-shadow">
                                     <div class="card-body">
                                         <div class="d-flex">
-                                            <div class="text" id="meninggal-global">
+                                            <div class="text" id="meninggal-indonesia">
                                                 
                                             </div>
                                             <div class="ml-auto">
@@ -105,7 +105,7 @@
                                 <div class="card bg-info img-card box-primary-shadow">
                                     <div class="card-body">
                                         <div class="d-flex">
-                                            <div class="text" id="positif-global">
+                                            <div class="text" id="positif-indonesia">
                                                 
                                             </div>
                                             <div class="ml-auto">
@@ -120,7 +120,7 @@
                                 <div class="card bg-success img-card box-primary-shadow">
                                     <div class="card-body">
                                         <div class="d-flex">
-                                            <div class="text" id="sembuh-global">
+                                            <div class="text" id="sembuh-indonesia">
                                             
                                             </div>
                                             <div class="ml-auto">
@@ -141,18 +141,21 @@
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-14">
             <div class="cards">
                 <div class="card-title">
-                    <h3 class="text-center mb-3">RINCIAN KASUS CORONAVIRUS SELURUH DUNIA</h3>
+                    <h3 class="text-center mb-3">RINCIAN KASUS CORONAVIRUS DI INDONESIA</h3>
                 </div>
                 <table class="table text-center" id="table">
                     <thead class="thead-dark">
                         <tr>
-                            <th scope="col">NEGARA</th>
-                            <th scope="col">POSITIF</th>
-                            <th scope="col">MENINGGAL</th>
-                            <th scope="col">SEMBUH</th>
+                            <th scope="col">PROVINSI</th>
+                            <th scope="col">POSITIF HARI INI</th>
+                            <th scope="col">MENINGGAL HARI INI</th>
+                            <th scope="col">SEMBUH HARI INI</th>
+                            <th scope="col">TOTAL POSITIF</th>
+                            <th scope="col">TOTAL MENINGGAL</th>
+                            <th scope="col">TOTAL SEMBUH</th>
                         </tr>
                     </thead>
-                    <tbody id="isi-negara">
+                    <tbody id="isi-provinsi">
                         
                     </tbody>
                 </table>
