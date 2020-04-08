@@ -20,9 +20,6 @@ function all(){
         });
     }
     all();
-    $('#td').hover(function(){
-        $(this).css('background-color','blue');
-    });
 
 
 
@@ -72,3 +69,32 @@ function all_indonesia(){
     });
 }
 all_indonesia();
+
+function data_today_indonesia(){
+    $.ajax({
+        url:'https://covid19hub-api.now.sh/api/nasional/today',
+        type:'get',
+        dataType:'json',
+        success:function(result){
+                    $('#meninggal-indonesia').append(`
+                    <p>KORBAN MENINGGAL</p>
+                    <p> `+ result.meninggal +`</p>
+                    <hr>
+                    <p> +`+ result.meninggal_baru +`</p>
+                `);
+                    $('#positif-indonesia').append(`
+                    <p>KASUS POSITIF</p>
+                    <p> `+ result.kumulatif +`</p>
+                    <hr>
+                    <p> +`+ result.baru +`</p>
+                `);
+                    $('#sembuh-indonesia').append(`
+                    <p>SEMBUH</p>
+                    <p> `+ result.sembuh +`</p>
+                    <hr>
+                    <p> +`+ result.sembuh_baru +`</p>
+                `);
+        }
+    });
+}
+data_today_indonesia();
