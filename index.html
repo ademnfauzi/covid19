@@ -21,7 +21,8 @@
            width: 20px;
        }
        .jumbotron {
-            height: 360px;
+            height: 320px;
+            background-color:#00BFFF;
        }
        .home {
            margin-top:1cm;
@@ -33,15 +34,29 @@
        .text p {
            font-weight: bold;
        }
+       .footer {
+        background-color:#00BFFF;
+        color:black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+       }
+       .span-covid {
+           font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+       }
+       .footer {
+            font-weight: bold;
+            color: black;  
+      }  
     </style>
     <title>COVID-19</title>
   </head>
   <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-info fixed-top" color-on-scroll="300">
+<nav class="navbar navbar-expand-lg navbar-default navbar-transparent fixed-top" color-on-scroll="300">
     <div class="container">
       <div class="navbar-translate">
-          INFO COVID-19
+          <span class="span-covid">COVID-19</span>
           <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar bar1"></span>
             <span class="navbar-toggler-bar bar2"></span>
@@ -52,7 +67,7 @@
         
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Dashboard" data-placement="bottom" href="#">
+            <a class="nav-link" rel="tooltip" title="Dashboard" data-placement="bottom" href="index.html">
               <img src="assets/img/home-run.png" class="gambar img-fluid" alt="">
               <p class="d-lg">Dashboard</p>
             </a>
@@ -64,7 +79,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Download Source Code" data-placement="bottom" href="#">
+            <a class="nav-link" rel="tooltip" title="Download Source Code" data-placement="bottom" href="assets/download/covid19.rar">
                 <img src="assets/img/arrow.png" class="gambar img-fluid" alt="">
               <p class="d-lg">Download SC</p>
             </a>
@@ -83,7 +98,6 @@
             <div class="separator separator-danger">✻</div>
             <p class="lead">This is a website for update data about coronavirus global data.</p>
         </div>
-        <hr>
     </div>
             <div class="home container">
                 <h5 class="text-center mb-4">DATA GLOBAL</h5>
@@ -144,16 +158,16 @@
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-14">
             <div class="cards">
                 <div class="card-title">
-                    <h3 class="text-center mb-3">RINCIAN KASUS CORONAVIRUS SELURUH DUNIA</h3>
+                    <h3 class="text-center mb-3">DETAILS OF COVID-19 CASE</h3>
                     <div class="separator separator-danger">✻</div>
                 </div>
                 <table class="table text-center" id="table">
                     <thead class="thead-dark">
                         <tr>
-                            <th scope="col">NEGARA</th>
-                            <th scope="col">POSITIF</th>
-                            <th scope="col">MENINGGAL</th>
-                            <th scope="col">SEMBUH</th>
+                            <th scope="col">COUNTRY</th>
+                            <th scope="col">CONFIRMED POSTIVE</th>
+                            <th scope="col">DEATHS</th>
+                            <th scope="col">RECOVERED</th>
                         </tr>
                     </thead>
                     <tbody id="isi-negara">
@@ -164,25 +178,10 @@
         </div>
     </div>
 </div>
-<br><br><br>
-<footer class="footer footer-big footer-color-black" data-color="black">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <p>THANKS FOR : </p>
-                    <ul>
-                        <li>kawalkorona.com</li>
-                        <li>github.com/javieraviles/covidAPI</li>
-                        <li>covid19hub-api.now.sh</li>
-                        <li>flaticon.com</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p> <img src="assets/img/hand.png" alt="" style="width: 20px;">KLIK TO MY GITHUB <img src="assets/img/hand.png" alt="" style="width: 20px;"> </p>
-                    <a href="https://github.com/ademnfauzi" style="color:white">My Github</a>
-                </div>
-            </div>
+<br><br>
+<footer class="footer footer-small footer-color-black" data-color="black">       
             <div class="copyright">
+                <a href="https://github.com/ademnfauzi">Klik To My Github</a>
                  © <script> document.write(new Date().getFullYear()) </script> COVID-19
             </div>
         </div>
