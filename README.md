@@ -7,7 +7,6 @@ Saya mendapatkan data-data ini melalui rest api yang tersediah sepert :
  
 Icon saya dapatkan melalui : https://www.flaticon.com
 
-Untuk tampilan website sudah saya hosting, silahkan kunjungi link dibawah ini :
-https://coronavirus19data.000webhostapp.com/
+Disini bisa digunakan untuk sebagai referensi bagaimana menggunakan rest api dengan javascript
 
 Semoga apa yang saya berikan disini dapat bermanfaat untuk semua orang. terimakasih
